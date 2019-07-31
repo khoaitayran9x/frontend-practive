@@ -17,7 +17,7 @@ a{
 	color: #3d3d3d;
 }
 a:hover{
-	text-decoration: underline;
+	color: #f22f49;
 }
 ul{
 	list-style: none;
@@ -127,18 +127,18 @@ nav .category-title{
 nav .category-title img{
 	margin-right: 18px;
 }
-nav .right-column ul{
-	padding: 17.5px;
-
+nav .right-column ul li:hover{
+	background: #ff6147;
+	color: #fff;
 }
 nav .right-column ul li{
 	display: inline-block;
-	margin-right: 38px;
+	padding: 17.5px;
 }
 nav .right-column ul li:last-child{
 	margin-right: 0
 }
-nav .right-column ul li a{
+nav .right-column ul a{
 	color: #fff;
 }
 
@@ -148,12 +148,24 @@ nav .right-column ul li a{
 }
 .menu-left li{
 	padding: 18px 15px;
-	border-bottom: 1px solid #eaeaea; 
+	border-bottom: 1px solid #eaeaea;
+	position: relative;
 }
-.menu-left li:last-child{
-	border-bottom: 0;
+.menu-left li:hover:after{
+	width: 6px;
 }
-.menu-left li a{
+.menu-left li:after{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: -15px;
+	width: 0px;
+	height: 52px;
+	background: #ff6147;
+	transition: all .3s ease;
+}
+.menu-left a{
 	color: #222;
 }
 .menu-left li img{
@@ -161,7 +173,6 @@ nav .right-column ul li a{
 }
 
 /*banner*/
-
 .banner{
  	width: 100%;
  	height: 380px;
@@ -205,6 +216,8 @@ div[class^='hero-text']{
 	color: #000;
 	padding: 13px 30px;
 }
+
+
 .title-offer{
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -258,7 +271,12 @@ div[class^='hero-text']{
 	color: #0f8ce9;
 	padding-bottom: 25px;
 }
-
+.box-content img:hover{
+	-webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+}
 .box-product, .box-featured-product{
 	overflow: auto;
 }
@@ -422,13 +440,21 @@ footer .container{
 	margin-bottom: 30px;
 }
 
+
+
 /*common class*/
 .btn-bg{
 	background: #f10e34;
 }
+.btn-bg:hover{
+	background: #a52a2a;
+}
 .btn-default{
 	background: #cacaca;
-	
+	transition: background 0.3s;
+}
+.btn-default:hover{
+	background: #f10e34;
 }
 .btn{
 	border: none;
@@ -533,16 +559,19 @@ footer .container{
 	float: right;
 	margin-right :35px;
 	margin-top: 20px;
+	transition: all .4s;
 }
 .mini-column .right .line:nth-child(2) a:hover{
 	text-decoration: none;
+	color: #f22f49;
+	border-color:#f22f49;
 }
+
 .mini-column .right .line:nth-child(3){
 	color: #c9c5c6;
 	margin-top: 15px;
 	float: right;
 	margin-right :20px;
-
 }
 
 .triangle{
@@ -566,9 +595,67 @@ footer .container{
 	text-transform: uppercase;
 	letter-spacing: .5px;
 }
-
+.btn-2 {
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.btn-2:hover {
+  transform: scale(0.9);
+}
+@keyframes pulse-grow {
+  to {
+    transform: scale(1.1);
+  }
+}
+.pulse-grow {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  animation-name: pulse-grow;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .mini-icon{
 	position: absolute;
 	top: 10px;
 	left: 0;
+}
+
+/*star rate*/
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.8em;
+  font-size: 20px;
+  color: #ffd700;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+  cursor: pointer;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0;
+   color: #ffd700;
+}
+.rated:before{
+	content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
 }
