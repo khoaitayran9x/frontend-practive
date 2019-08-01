@@ -56,6 +56,9 @@ header{
 .right-header li a{
 	color: #fff;
 }
+.right-header li a:hover{
+	text-decoration: underline;
+}
 
 .right-header li span{
 	margin: 0 18px;
@@ -356,7 +359,9 @@ footer{
 footer .container{
 	overflow: hidden;
 }
-
+footer a:hover{
+	text-decoration: underline;
+}
 .top-footer a{
 	color: #b6b6b6;
 }
