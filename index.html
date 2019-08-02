@@ -744,15 +744,15 @@
 		}
 
 		function showSlide(n) {
-		  var slide = document.getElementsByClassName("item-slide");
-		  if (n > slide.length) index = 1;
-		  if (n < 1) index = slide.length;
+		  var slides = document.getElementsByClassName("item-slide");
+		  if (n > slides.length) index = 1;
+		  if (n < 1) index = slides.length;
 
-		  slideLength = slide.length;
-		  for (var i = 0; i < slideLength ; i++) {
-		      slide[i].style.display = "none";  
+		  slidesLength = slides.length;
+		  for (var i = 0; i < slidesLength ; i++) {
+		      slides[i].style.display = "none";  
 		  }
-		  slide[index-1].style.display = "block";
+		  slides[index-1].style.display = "block";
 		}
 
 		// lazy load images
@@ -762,7 +762,7 @@
 
 		function elementInViewport(el){
 			var rect = el.getBoundingClientRect();
-			
+
 			return (rect.top >= 0 && 
 					rect.left >= 0 && 
 					rect.bottom <= window.innerHeight &&
@@ -771,17 +771,17 @@
 
 		function lazyload(){
 
-			var lazyImage = document.getElementsByClassName('lazy');
+			var lazyImages = document.getElementsByClassName('lazy');
 
-			var lengthImage = lazyImage.length;
+			var lengthImages = lazyImages.length;
 
-			for (var i = 0; i < lengthImage; i++) {
+			for (var i = 0; i < lengthImages; i++) {
 
-				if(elementInViewport(lazyImage[i])){
+				if(elementInViewport(lazyImages[i])){
 
-					var dataSrc =  lazyImage[i].getAttribute('data-src');
+					var dataSrc =  lazyImages[i].getAttribute('data-src');
 
-					lazyImage[i].setAttribute('src', dataSrc);
+					lazyImages[i].setAttribute('src', dataSrc);
 				}
 			}
 
