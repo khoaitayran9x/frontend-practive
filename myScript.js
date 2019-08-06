@@ -19,6 +19,9 @@ function showSlide(n) {
 }
 
 // lazy load images
+window.onload= function(){
+	lazyload();
+};
 window.onscroll= function(){
 	lazyload();
 };
@@ -48,4 +51,10 @@ function lazyload(){
 		}
 	}
 
+}
+
+function toggleDisplay(elementID){
+    (function(style) {
+        style.display = style.display === 'block' ? '' : 'block';
+    })(document.getElementById(elementID).style);
 }

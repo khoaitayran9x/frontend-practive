@@ -6,6 +6,7 @@
 	<title>Frontend Practive</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 	<!-- header -->
@@ -21,9 +22,9 @@
 			<div class="right-header">
 				<ul>
 					<li><a href="">My Account</a><span>|</span></li>
-					<li><a href="">Wishlist</a><span>|</span></li>
+					<li class="tb-hidden"><a href="">Wishlist</a><span>|</span></li>
 					<li><a href="">My Cart</a><span>|</span></li>
-					<li><a href="">Checkout</a><span>|</span></li>
+					<li class="tb-hidden"><a href="">Checkout</a><span>|</span></li>
 					<li><a href="">Login</a></li>
 				</ul>
 
@@ -40,6 +41,21 @@
 						<tr><td id="total">TOTAL</td></tr>
 						<tr><td id="price-total">$600.00</td></tr>
 					</table>
+				</div>
+				
+				<div class="sm-menu">
+					<div class="btn-sm-menu" onclick="toggleDisplay('box-sm-menu')">≡</div>
+					<div class="box-sm-menu" id="box-sm-menu">
+						<ul class="list-sm-menu">
+							<a href=""><li>Clothing</li></a>
+							<a href=""><li>Electronics Hot</li></a>
+							<a href=""><li>Health & Beauty</li></a>
+							<a href=""><li>Watches</li></a>
+							<a href=""><li>Jewellery</li></a>
+							<a href=""><li>Shoes</li></a>
+							<a href=""><li>Login</li></a>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -61,7 +77,6 @@
 					<a href=""><li>Watches</li></a>
 					<a href=""><li>Jewellery</li></a>
 					<a href=""><li>Shoes</li></a>
-
 				</ul>
 			</div>
 		</div>	
@@ -72,7 +87,7 @@
 	<div class="container">
 
 		<!-- left column -->
-		<div class="left-column">
+		<div class="left-column tb-hidden">
 			<div class="box">
 				<ul class="menu-left">
 					<a href=""><li><img src="images/item-list.png" alt="item-list">Clothing</li></a>
