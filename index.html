@@ -32,18 +32,21 @@
 
 
 				<div class="sm-menu-left">
-					<div class="btn btn-bg btn-sm-category" onclick="toggleDisplay('list-menu-left')"><img src="images/list-menu.png" alt="category"></div>
-					<ul class="menu-left" id="list-menu-left">
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Clothing</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Electronics</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Shoes</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Watches</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Jewellery</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Health and Beauty</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Kids and Babies</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Sports</li></a>
-						<a href=""><li><img src="images/item-list.png" alt="item-list">Home and Garden</li></a>
-					</ul>
+					<div class="btn-sm-category" onclick="toggleDisplay('list-menu-left')"><img src="images/list-menu.png" alt="category"></div>
+					<div id="list-menu-left" style="display: none;">
+						<ul>
+							<a href=""><li>Clothing</li></a>
+							<a href=""><li>Electronics</li></a>
+							<a href=""><li>Shoes</li></a>
+							<a href=""><li>Watches</li></a>
+							<a href=""><li>Jewellery</li></a>
+							<a href=""><li>Health and Beauty</li></a>
+							<a href=""><li>Kids and Babies</li></a>
+							<a href=""><li>Sports</li></a>
+							<a href=""><li>Home and Garden</li></a>
+						</ul>
+					</div>
+					
 				</div>
 
 				<div class="box-search">
@@ -63,9 +66,9 @@
 				
 				<div class="sm-menu">
 					<div class="btn-sm-menu" onclick="toggleDisplay('box-sm-menu')">≡</div>
-					<div class="box-sm-menu" id="box-sm-menu">
+					<div class="box-sm-menu" id="box-sm-menu" style="display: none;">
 						<ul class="list-sm-menu">
-							<a href="."><li><img src="images/logo.png" alt=""></li></a>
+							<a href=""><li><img src="images/logo.png" alt=""></li></a>
 							<a href=""><li>Home</li></a>
 							<a href=""><li>Clothing</li></a>
 							<a href=""><li>Electronics Hot</li></a>

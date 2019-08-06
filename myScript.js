@@ -53,7 +53,16 @@ function lazyload(){
 
 }
 
+
 function toggleDisplay(elementID){
-    	style = document.getElementById(elementID).style;
-        style.display = style.display === 'block' ? '' : 'block';
-    };
+	var ele = document.getElementById(elementID);
+	var styleBoxSmMenu = document.getElementById('box-sm-menu').style;
+	var styleListMenuLeft = document.getElementById('list-menu-left').style;
+	if (ele.style.display == "none") {
+	 	styleBoxSmMenu.display = "none";
+	 	styleListMenuLeft.display = "none";
+	    ele.style.display = "block";
+	} else {
+	    ele.style.display = "none";
+	}
+};
