@@ -54,7 +54,6 @@ function lazyload(){
 }
 
 function toggleDisplay(elementID){
-    (function(style) {
+    	style = document.getElementById(elementID).style;
         style.display = style.display === 'block' ? '' : 'block';
-    })(document.getElementById(elementID).style);
-}
+    };
