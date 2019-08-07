@@ -65,6 +65,15 @@
 .list-sm-menu a:hover,#list-menu-left a:hover{
 	color: #f10e34;
 }
+.md-show,.sm-show{
+	display: none;
+}
+#line{
+	border-bottom: 1px solid #f10e34;
+	width: 50%;
+	margin: 0 auto;
+	padding:0;
+}
 
 
 
@@ -163,6 +172,9 @@
 	   width: 70%;
 	   margin: 0 auto
 	}
+	.top-footer .card-group>img {
+	    margin: 10px;
+	}
 	
 }
 
@@ -209,7 +221,7 @@
 	.mini-column{
 		width: 70%;
 		display: block;
-		margin: 25px auto!important;
+		margin: 40px auto!important;
 	}
 	.box-featured-product .item {
 	    width: calc(50% - 15px);
@@ -284,7 +296,6 @@
 	    width: 100%;
 	  	text-align: center;
 	    margin-top: 20px;
-
 	}
 	.cart-total{
 		display: none;
@@ -303,6 +314,9 @@
 	}
 	.right-header li span {
 	    margin: 0 8px;
+	}
+	.md-show{
+		display: block;
 	}
 
 
@@ -348,6 +362,9 @@
 	}
 	#list-menu-left {
 	    top: 60px;
+	}
+	.sm-show{
+		display: block;
 	}
 }
 
