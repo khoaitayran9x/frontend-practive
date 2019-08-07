@@ -30,8 +30,8 @@
 }
 #list-menu-left{
 	position: absolute;
-	background: #222222;
-	z-index: 999;
+	background: #f3f3f3;
+	z-index: -1;
 	top: 110px;
 	left: 0;
 }
@@ -49,7 +49,7 @@
 	float: left;
 }
 .list-sm-menu, #list-menu-left ul{
-	display: block!important;
+	display: block;
 	width: 100%;
 	padding-right: 0!important;
 }
@@ -74,7 +74,6 @@
 	margin: 0 auto;
 	padding:0;
 }
-
 
 
 @media screen and (max-width: 1200px) {
@@ -103,7 +102,10 @@
 		display: inline-block;
 		margin: 38px 38px 20px 15px;
 	}
-	
+	#list-menu-left{
+		z-index: 10;
+		background: #222;
+	}
 	.cart-total{
 		float: right;
 	}
@@ -237,8 +239,6 @@
 	.cart-total{
 		float: left;
 	}
-
-
 }
 
 @media screen and (max-width: 700px) {
