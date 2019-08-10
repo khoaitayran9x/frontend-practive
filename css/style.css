@@ -19,6 +19,7 @@ a{
 a:hover{
 	color: #f22f49;
 }
+
 ul{
 	list-style: none;
 }
@@ -131,12 +132,12 @@ nav .category-title img{
 	margin-right: 18px;
 }
 nav .right-column ul li:hover{
-	background: #ff6147;
-	color: #fff;
+	background: #fff;
+	color: #f10e34;
 }
 nav .right-column ul li{
 	display: inline-block;
-	padding: 17.5px;
+	padding: 18px;
 }
 nav .right-column ul li:last-child{
 	margin-right: 0

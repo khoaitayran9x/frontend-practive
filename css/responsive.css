@@ -1,4 +1,3 @@
-
 .sm-menu{
 	display: none;
 	padding: 10px;
@@ -8,7 +7,6 @@
 	font-size: 35px;
 	margin-top: 23px;
 	cursor: pointer;
-	padding: 15px;
 }
 .btn-sm-category{
 	font-size: 18px;
@@ -100,7 +98,7 @@
 	}
 	.btn-sm-category{
 		display: inline-block;
-		margin: 38px 38px 20px 15px;
+		margin: 38px 10px 20px 10px
 	}
 	#list-menu-left{
 		z-index: 10;
@@ -108,6 +106,9 @@
 	}
 	.cart-total{
 		float: right;
+	}
+	nav .right-column ul li {
+	    padding: 16px;
 	}
 	.left-header{
 		width: auto;
@@ -187,9 +188,6 @@
 	.box-search input[type='text']{
 		width: 75%;
 	}
-}
-
-@media screen and (max-width: 950px) {
 	.beautiful .text-beautiful, .beautiful .image-beautiful {
 		text-align: center;
 	    width: 100%;
@@ -198,80 +196,26 @@
 		width: 100%;
 		height: auto;
 	}
-	.beautiful .text-beautiful .line{
-		font-size: 3vw!important;
-	}
-	
-
 }
 
-@media screen and (max-width: 800px) {
-	.box-search{
-		width: 50%;
-	}
-	.btn-sm-menu {
-	    margin-top: 8px;
-	}
-	nav{
-		display: none;
-	}
-	.box-product .item {
-	    width: 33.33%;
-	    text-align: center;
-	    margin: 0 0 20px 0;
-	}
-	.mini-column{
-		width: 70%;
-		display: block;
-		margin: 40px auto!important;
-	}
-	.box-featured-product .item {
-	    width: calc(50% - 15px);
-	  	text-align: center;
-	    margin-top: 20px;
-	}
-	.logo-relate{
+@media screen and (max-width: 768px) {
+	nav ul{
 		display: none;
 	}
 	.sm-menu{
-		display: inline-block;
+		display: block;
 	}
-	.cart-total{
-		float: left;
+	.cart-total {
+	   display: none;
 	}
-}
-
-@media screen and (max-width: 700px) {
 	.box-search{
-		width: 40%;
+		width: 70%;
 	}
-	#list-menu-left {
-	   top: 100px;
+	.right-header li span {
+	    margin: 0 8px;
 	}
-	.banner{
-		height: auto;
-	}
-	
-	.wrap-hero{
-		padding: 30px 10px;
-	}
-	.offer-detail tr td {
-	    padding: 1em 0;
-	    display: block;
-	}
-	.btn-sm-category{
-		margin: 35px 38px 15px 15px;
-	}
-	
-
-}
-
-@media screen and (max-width: 600px) {
-	
-	.prev, .next,.text {font-size: 15px}
-
-	.banner{
-		height: 240px;
+	.box-content{
+		text-align: center;
 	}
 	.box .heading {
 	   display: block;
@@ -285,99 +229,85 @@
 	}
 	.box-product .item {
 	    width: 50%;
+	    margin: 0;
+	}
+	.box-product .item img{
+		width: 14.5vh;
+    	height: 15vh;
 	}
 	.mini-column{
 		width: 100%;
+		margin-left: 0!important;
 	}
 	.box-featured-product .item {
 	    width: 100%;
 	  	text-align: center;
 	    margin-top: 20px;
 	}
-	.cart-total{
+	.logo-relate{
 		display: none;
 	}
-	.btn-sm-category{
-		margin: 40px 38px 10px 15px;
-	}
-	.tb-hidden{
-		display: none!important;
-	}
-	.box-search{
-		width: 60%;
-	}
-	.right-header li span {
-	    margin: 0 8px;
-	}
-	.md-show{
-		display: block;
-	}
-
 
 }
 
-@media screen and (max-width: 500px) {
 
-	body{
-		font-size: 3.5vw;
-	}
-	.right-header>ul{
-		display: none;
-	}
+@media screen and (max-width: 480px) {
 	header{
 		padding: 0;
+		overflow: auto;
 	}
-	.box-search {
-	    width: 75%;
-	    margin-top: 12px;
+	.box-search{
+		width: 65%;
 	}
+	.box-search input[type='text'] {
+	    width: 65%;
+	}
+	.right-header ul{
+		display: none;
+	}
+
+	.btn-sm-menu,.box-search {
+	    margin: 15px 0;
+	}
+	.btn-sm-category {
+	    margin: 15px 5%;
+	}
+	#list-menu-left {
+    	top: 71px;
+	}
+	.list-sm-menu{
+		display: block!important;
+	}
+	.box-sm-menu {
+	    top: 70px;
+	}
+	.banner {
+	    height: 250px;
+	}
+	.prev, .next,.text {font-size: 15px}
+	.wrap-hero {
+	    padding: 35px 0 70px;
+	}
+	.hero-text-3 {
+	    margin-bottom: 20px;
+	}
+	.banner .shop-now{
+		padding: 0.5rem 1rem;
+	}
+	.hero-text-1,.hero-text-2,.hero-text-3{
+		font-size: 5vw!important;
+	}
+	.offer-detail tr td {
+		display: block;
+		padding: 16px 0;
+	}
+
 	.beautiful .text-beautiful .line{
 		font-size: 5vw!important;
 	}
-	.bottom-footer a{
-	    margin-bottom: 10px;
-	    display: inline-block;
-	}
 	
-	.btn-sm-menu{
-		position: absolute;
-	    top: -19px;
-    	right: 0;
-    	margin-top: 23px;
-	}
-	.box-sm-menu {
-	    top: 60px;
-	}
-	.btn-sm-category{
-		margin: 10px 0;
-	}
-	#list-menu-left {
-	    top: 60px;
-	}
 	.sm-show{
 		display: block;
 	}
 }
 
-@media screen and (max-width: 400px) {
-	.banner{
-		height: 180px;
-	}
-	.wrap-hero .hero-text-3 {
-	    margin-bottom: 15px;
-	}
-	.shop-now{
-		padding: 5px 16px!important;
-	}
-	.box-product .item img{
-		width: 145px;
-    	height: 180px;
-	}
-	.box-search {
-	    width: 70%;
-	}
-	.box-search input[type='text']{
-		width: 60%;
-	}
-
-}
